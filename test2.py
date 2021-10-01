@@ -1,100 +1,44 @@
-from PyQt5 import QtGui
-from PyQt5.QtWidgets import QApplication, QMainWindow,  QAction, QTextEdit, QFontDialog, QColorDialog
 import sys
-from PyQt5.QtGui import QIcon
-from PyQt5.QtPrintSupport import QPrintDialog, QPrinter, QPrintPreviewDialog
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtGui import QMovie
+from PyQt5.QtCore import Qt
 
 
-class Window(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.title = "PyQt5 QToolbar"
-        self.top = 200
-        self.left = 500
-        self.width = 680
-        self.height = 480
-        self.setWindowIcon(QtGui.QIcon("icon.png"))
-        self.setWindowTitle(self.title)
-        self.setGeometry(self.left, self.top, self.width, self.height)
-        self.createEditor()
-        self.CreateMenu()
-        self.show()
+class LoadingGif(object):
 
-    def CreateMenu(self):
-        mainMenu = self.menuBar()
-        fileMenu = mainMenu.addMenu('File')
-        editMenu = mainMenu.addMenu('Edit')
-        viewMenu = mainMenu.addMenu('View')
-        helpMenu = mainMenu.addMenu('Help')
-        printAction = QAction(QIcon("print.png"), "Print", self)
-        printAction.triggered.connect(self.printDialog)
-        fileMenu.addAction(printAction)
-        printPreviewAction = QAction(
-            QIcon("printprev.png"), "Print Preview", self)
-        printPreviewAction.triggered.connect(self.printpreviewDialog)
-        fileMenu.addAction(printPreviewAction)
-        exiteAction = QAction(QIcon("exit.png"), 'Exit', self)
-        exiteAction.setShortcut("Ctrl+E")
-        exiteAction.triggered.connect(self.exitWindow)
-        fileMenu.addAction(exiteAction)
-        copyAction = QAction(QIcon("copy.png"), 'Copy', self)
-        copyAction.setShortcut("Ctrl+C")
-        editMenu.addAction(copyAction)
-        saveAction = QAction(QIcon("Save.png"), 'Save', self)
-        saveAction.setShortcut("Ctrl+S")
-        editMenu.addAction(saveAction)
-        pasteAction = QAction(QIcon("Paste.png"), 'Paste', self)
-        pasteAction.setShortcut("Ctrl+P")
-        editMenu.addAction(pasteAction)
-        fontAction = QAction(QIcon("font.png"), "Font", self)
-        fontAction.setShortcut("Ctrl+F")
-        fontAction.triggered.connect(self.fontDialog)
-        viewMenu.addAction(fontAction)
-        colorAction = QAction(QIcon("color.png"), "Color", self)
-        colorAction.triggered.connect(self.colorDialog)
-        viewMenu.addAction(colorAction)
-        self.toolbar = self.addToolBar('Toolbar')
-        self.toolbar.addAction(copyAction)
-        self.toolbar.addAction(saveAction)
-        self.toolbar.addAction(pasteAction)
-        self.toolbar.addAction(exiteAction)
-        self.toolbar.addAction(fontAction)
-        self.toolbar.addAction(colorAction)
-        self.toolbar.addAction(printAction)
-        self.toolbar.addAction(printPreviewAction)
+    def mainUI(self, FrontWindow):
+        FrontWindow.setObjectName("FTwindow")
+        FrontWindow.resize(320, 300)
+        self.centralwidget = QtWidgets.QWidget(FrontWindow)
+        self.centralwidget.setObjectName("main-widget")
 
-    def exitWindow(self):
-        self.close()
+        # Label Create
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(25, 25, 200, 200))
+        self.label.setMinimumSize(QtCore.QSize(250, 250))
+        self.label.setMaximumSize(QtCore.QSize(250, 250))
+        self.label.setObjectName("lb1")
+        FrontWindow.setCentralWidget(self.centralwidget)
 
-    def createEditor(self):
-        self.textEdit = QTextEdit(self)
-        self.setCentralWidget(self.textEdit)
+        # Loading the GIF
+        self.movie = QMovie("Rolling-1s-200px.gif")
+        self.label.setMovie(self.movie)
 
-    def fontDialog(self):
-        font, ok = QFontDialog.getFont()
-        if ok:
-            self.textEdit.setFont(font)
+        self.startAnimation()
 
-    def colorDialog(self):
-        color = QColorDialog.getColor()
-        self.textEdit.setTextColor(color)
+    # Start Animation
 
-    def printDialog(self):
-        printer = QPrinter(QPrinter.HighResolution)
-        dialog = QPrintDialog(printer, self)
-        if dialog.exec_() == QPrintDialog.Accepted:
-            self.textEdit.print_(printer)
+    def startAnimation(self):
+        self.movie.start()
 
-    def printpreviewDialog(self):
-        printer = QPrinter(QPrinter.HighResolution)
-        previewDialog = QPrintPreviewDialog(printer, self)
-        previewDialog.paintRequested.connect(self.printPreview)
-        previewDialog.exec_()
-
-    def printPreview(self, printer):
-        self.textEdit.print_(printer)
+    # Stop Animation(According to need)
+    def stopAnimation(self):
+        self.movie.stop()
 
 
-App = QApplication(sys.argv)
-window = Window()
-sys.exit(App.exec())
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QMainWindow()
+demo = LoadingGif()
+demo.mainUI(window)
+window.show()
+sys.exit(app.exec_())

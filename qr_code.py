@@ -28,6 +28,8 @@ from PyQt5.QtGui import QRegion
 from PyQt5.QtPrintSupport import QPrintDialog, QPrinter
 import tempfile
 from PIL.ImageQt import ImageQt
+import psutil
+from PyQt5.QtGui import QMovie
 # Do not use Global Variables unless absolutely necessary which 99.9% of the time
 # is not the case -- so the basic rule is never use them
 
@@ -275,6 +277,25 @@ class popup_window(QWidget):                           # <===
 
         self.clicked = False
 
+        # Label Create
+        self.label = QtWidgets.QLabel(self)
+        self.label.setGeometry(QtCore.QRect(25, 25, 250, 250))
+        self.label.setMinimumSize(QtCore.QSize(250, 250))
+        self.label.setMaximumSize(QtCore.QSize(250, 250))
+        self.label.setObjectName("lb1")
+
+        self.movie = QMovie("Rolling-1s.gif")
+        self.label.setMovie(self.movie)
+
+        # Start Animation
+
+    def startAnimation(self):
+        self.movie.start()
+
+    # Stop Animation(According to need)
+    def stopAnimation(self):
+        self.movie.stop()
+
     def paintEvent(self, event):
         p = QPainter(self)
         p.fillRect(self.rect(), QColor('gainsboro'))
@@ -314,6 +335,8 @@ class popup_window(QWidget):                           # <===
         global textEdit_calendarEdit
 
         # Data to be encoded
+
+        self.startAnimation()
 
         date_time_stamp_now = datetime.now()
         timestampStr_now = date_time_stamp_now.strftime("%d%m%Y-%H%M%S")
@@ -362,27 +385,6 @@ class popup_window(QWidget):                           # <===
 
                 img.save(path_qrcode + '.jpg')
 
-                # img = utils.ImageReader(path_qrcode + '.jpg')
-                # img_width, img_height = img.getSize()
-                # aspect = img_height / float(img_width)
-                # pagesize = (61, 41)
-
-                # my_canvas = canvas.Canvas(path_qrcode + '.pdf',
-                #                           pagesize=pagesize)
-                # # flow_obj = []
-                # # frame = Frame(1, 1, 60, 40, showBoundary=1)
-                # # frame.addFromList(flow_obj, my_canvas)
-                # my_canvas.setFont("Times-Roman", 8)
-                # my_canvas.drawString(4, 20, textEdit_PartId_text)
-                # my_canvas.drawString(4, 2, CodeGen)
-
-                # my_canvas.saveState()
-
-                # my_canvas.drawImage(path_qrcode + '.jpg', 25, 10,
-                #                     width=30, height=(30 * aspect))
-
-                # my_canvas.save()
-
                 pagesize = (127.92, 85.28)
 
                 pdf = canvas.Canvas(
@@ -402,12 +404,6 @@ class popup_window(QWidget):                           # <===
                 f.addFromList(flow_obj, pdf)
 
                 pdf.save()
-                # unix_path = str(os.path.dirname(__file__))
-
-                # unix_path2 = unix_path.replace('\\', '/')
-
-                # os.startfile(unix_path2 + '/' +
-                #              path_qrcode + '.pdf', 'print')
 
             else:
                 textEdit_AmountStart_text = int(
@@ -425,7 +421,6 @@ class popup_window(QWidget):                           # <===
                         }
                 # Encoding data using make() function
                 img = qrcode.make(data)
-
                 # Saving as an image file
                 timestampStr = date_time_stamp_now.strftime("_%H-%M-%S")
                 path_qrcode = 'qrcode_bin/QRCode_' + CodeGen + timestampStr
@@ -433,27 +428,6 @@ class popup_window(QWidget):                           # <===
                 list_path.append(path_qrcode)
 
                 img.save(path_qrcode + '.jpg')
-
-                # img = utils.ImageReader(path_qrcode + '.jpg')
-                # img_width, img_height = img.getSize()
-                # aspect = img_height / float(img_width)
-                # pagesize = (61, 41)
-
-                # my_canvas = canvas.Canvas(path_qrcode + '.pdf',
-                #                           pagesize=pagesize)
-                # # flow_obj = []
-                # # frame = Frame(1, 1, 60, 40, showBoundary=1)
-                # # frame.addFromList(flow_obj, my_canvas)
-                # my_canvas.setFont("Times-Roman", 8)
-                # my_canvas.drawString(4, 20, textEdit_PartId_text)
-                # my_canvas.drawString(4, 2, CodeGen)
-
-                # my_canvas.saveState()
-
-                # my_canvas.drawImage(path_qrcode + '.jpg', 25, 10,
-                #                     width=30, height=(30 * aspect))
-
-                # my_canvas.save()
 
                 pagesize = (127.92, 85.28)
 
@@ -474,25 +448,21 @@ class popup_window(QWidget):                           # <===
                 f.addFromList(flow_obj, pdf)
 
                 pdf.save()
-                # unix_path = str(os.path.dirname(__file__))
-
-                # unix_path2 = unix_path.replace('\\', '/')
-
-                # os.startfile(unix_path2 + '/' +
-                #              path_qrcode + '.pdf', 'print')
 
         message = ",\n".join(list_path)
         message1 = "Generate QR code have successfully. \n" + message
 
-        filenames = ["1.pdf", "2.pdf", "3.pdf"]
         merger = PdfFileMerger()
         for filename in list_path:
 
             merger.append(filename + ".pdf")
+
         timestampStr = date_time_stamp_now.strftime("_%H-%M-%S")
 
         file_name_merge = "qrcode_pdf/document-output_" + timestampStr + ".pdf"
         merger.write(file_name_merge)
+
+        merger.close()
 
         # QMessageBox.about(self, "แจ้งเตือน",
         #                   message1)
@@ -503,17 +473,6 @@ class popup_window(QWidget):                           # <===
 
         filePath = unix_path2 + '/' + file_name_merge
 
-        print('filepath >>>>>> ', filePath)
-
-        # os.startfile(unix_path2 + '/' +
-        #              file_name_merge, 'print')
-#########################   29.9.2021  ########################################################################
-        # printer = QPrinter(QPrinter.HighResolution)
-        # dialog = QPrintDialog(printer, self)
-        # if dialog.exec_() == QPrintDialog.Accepted:
-        #     self.textEdit.print_(printer)
-        # printer.setOutputFileName(
-        #     file_name_merge)
         if not filePath:
             return
         file_extension = os.path.splitext(filePath)[1]
@@ -540,6 +499,7 @@ class popup_window(QWidget):                           # <===
         else:
             pass
 #####################################################
+        self.stopAnimation()
         QMessageBox.about(self, "แจ้งเตือน",
                           "Send data for print Successfully! ")
 
@@ -547,7 +507,6 @@ class popup_window(QWidget):                           # <===
         test1 = os.listdir(directory1)
 
         for item1 in test1:
-            print(item1)
             # if item.endswith(".jpg"):
             #     os.remove(os.path.join(directory, item))
             if item1.endswith(".pdf"):
@@ -555,21 +514,45 @@ class popup_window(QWidget):                           # <===
 
         directory = "qrcode_bin/"
         test = os.listdir(directory)
-
         for item in test:
             if item.endswith(".jpg"):
                 os.remove(os.path.join(directory, item))
             if item.endswith(".pdf"):
                 os.remove(os.path.join(directory, item))
 
+#         try:
+#             directory = "qrcode_bin/"
+#             test = os.listdir(directory)
+
+#             for item in test:
+#                 if item.endswith(".jpg"):
+#                     os.remove(os.path.join(directory, item))
+#                 if item.endswith(".pdf"):
+#                     os.remove(os.path.join(directory, item))
+#         except:  # PermissionError: [WinError 32] The process cannot access the file because it is being used by another process
+#             for proc in psutil.process_iter():
+#                 if proc.name() == 'python.exe':
+#                     proc.kill()
+
+#             directory = "qrcode_bin/"
+#             test = os.listdir(directory)
+
+#             for item in test:
+#                 if item.endswith(".jpg"):
+#                     os.remove(os.path.join(directory, item))
+#                 if item.endswith(".pdf"):
+#                     os.remove(os.path.join(directory, item))
+
         self.close()
-        # except:
-        #     QMessageBox.about(self, "แจ้งเตือน",
-        #                       "ไม่สามารถ print ได้")
+
+    def reject(self):
+        self.close()
 
 
 class admin_page(QWidget):                           # <===
     def __init__(self):
+
+        global textUsername
 
         QWidget.__init__(self)
         self.setWindowTitle("Program Qrcode Generator")
@@ -1029,8 +1012,10 @@ class admin_page(QWidget):                           # <===
 
             if check_count_kanban == 0:
 
-                connect.execute("INSERT INTO PART_KANBAN (PART_ID,PART_NO,KANBAN_ID,Create_date) VALUES (? , ? , ?, ?)",
-                                (part_id, part_no, kanban_id, date_now_convert))
+                textEmployee_on = Employee_on
+
+                connect.execute("INSERT INTO PART_KANBAN (PART_ID,PART_NO,KANBAN_ID,Create_date,EMPLOYEE_ID) VALUES (? , ? , ?, ?, ?)",
+                                (part_id, part_no, kanban_id, date_now_convert, textEmployee_on))
 
                 connect.commit()
 
@@ -1110,9 +1095,10 @@ class admin_page(QWidget):                           # <===
                 check_count_line = check_count_line + 1
 
             if check_count_line == 0:
+                textEmployee_on = Employee_on
 
-                connect.execute("INSERT INTO LINE (LINE,Create_date) VALUES (?, ?)",
-                                (line, date_now_convert))
+                connect.execute("INSERT INTO LINE (LINE,Create_date,EMPLOYEE_ID) VALUES (?, ? , ?)",
+                                (line, date_now_convert,textEmployee_on))
 
                 connect.commit()
 
@@ -2559,6 +2545,7 @@ class Window2(QWidget):
                                            "กรุณากรอก Username Password",
                                            QtWidgets.QMessageBox.Ok,
                                            self)
+
             popup3.show()
 
         else:
@@ -2600,6 +2587,9 @@ class Window2(QWidget):
                         "Program QR code Generator",
                         "Welcome to ADMIN PAGE",
                         QMessageBox.Ok)
+
+                    global Employee_on
+                    Employee_on = textUsername
 
                     self.w = admin_page()
                     self.w.show()
