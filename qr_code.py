@@ -40,6 +40,7 @@ from PyQt5.QtGui import QMovie
 
 class popup_window(QWidget):                           # <===
     def __init__(self):
+
         QWidget.__init__(self)
         self.setWindowTitle("Are you sure?")
         self.setWindowIcon(QtGui.QIcon('qr-code-generator.ico'))
@@ -87,7 +88,7 @@ class popup_window(QWidget):                           # <===
 
         self.label1_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label1_2.setFont(font)
         self.label1_2.setText(textEdit_EmpNo_text)
@@ -96,7 +97,7 @@ class popup_window(QWidget):                           # <===
 
         self.label2_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label2_2.setFont(font)
         self.label2_2.setText(textEdit_Line_text)
@@ -105,7 +106,7 @@ class popup_window(QWidget):                           # <===
 
         self.label3_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label3_2.setFont(font)
         self.label3_2.setText(textEdit_comboBox)
@@ -114,7 +115,7 @@ class popup_window(QWidget):                           # <===
 
         self.label4_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label4_2.setFont(font)
         self.label4_2.setText(textEdit_KanbanId_text)
@@ -123,7 +124,7 @@ class popup_window(QWidget):                           # <===
 
         self.label5_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label5_2.setFont(font)
         self.label5_2.setText(textEdit_PartNo_text)
@@ -132,7 +133,7 @@ class popup_window(QWidget):                           # <===
 
         self.label6_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label6_2.setFont(font)
         self.label6_2.setText(textEdit_PartId_text)
@@ -141,7 +142,7 @@ class popup_window(QWidget):                           # <===
 
         self.label7_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label7_2.setFont(font)
         self.label7_2.setText(textEdit_calendarEdit)
@@ -150,7 +151,7 @@ class popup_window(QWidget):                           # <===
 
         self.label8_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label8_2.setFont(font)
         self.label8_2.setText(textEdit_timeEdit)
@@ -159,7 +160,7 @@ class popup_window(QWidget):                           # <===
 
         self.label9_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label9_2.setFont(font)
         self.label9_2.setText(textEdit_Amount_text)
@@ -168,7 +169,7 @@ class popup_window(QWidget):                           # <===
 
         self.label10_2 = QtWidgets.QLabel(self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(8)
         self.label10_2.setFont(font)
         self.label10_2.setText(textEdit_AmountStart_text)
@@ -184,7 +185,7 @@ class popup_window(QWidget):                           # <===
 
         self.label1 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label1.setFont(font)
         self.label1.setObjectName("label1")
@@ -192,7 +193,7 @@ class popup_window(QWidget):                           # <===
 
         self.label2 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label2.setFont(font)
         self.label2.setObjectName("label2")
@@ -200,7 +201,7 @@ class popup_window(QWidget):                           # <===
 
         self.label3 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label3.setFont(font)
         self.label3.setObjectName("label3")
@@ -208,7 +209,7 @@ class popup_window(QWidget):                           # <===
 
         self.label4 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label4.setFont(font)
         self.label4.setObjectName("label4")
@@ -216,7 +217,7 @@ class popup_window(QWidget):                           # <===
 
         self.label5 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label5.setFont(font)
         self.label5.setObjectName("label5")
@@ -224,7 +225,7 @@ class popup_window(QWidget):                           # <===
 
         self.label6 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label6.setFont(font)
         self.label6.setObjectName("label6")
@@ -232,7 +233,7 @@ class popup_window(QWidget):                           # <===
 
         self.label7 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label7.setFont(font)
         self.label7.setObjectName("label7")
@@ -240,7 +241,7 @@ class popup_window(QWidget):                           # <===
 
         self.label8 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label8.setFont(font)
         self.label8.setObjectName("label8")
@@ -248,7 +249,7 @@ class popup_window(QWidget):                           # <===
 
         self.label9 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label9.setFont(font)
         self.label9.setObjectName("label9")
@@ -256,7 +257,7 @@ class popup_window(QWidget):                           # <===
 
         self.label10 = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.label10.setFont(font)
         self.label10.setObjectName("label10")
@@ -289,6 +290,28 @@ class popup_window(QWidget):                           # <===
 
         # Start Animation
 
+        # directory1 = "qrcode_pdf/"
+        # path_delete = os.path.dirname(os.path.abspath(__file__))
+        # path_del = os.path.join(path_delete, directory1)
+        # print('path del >>> ', path_del)
+
+        # test1 = os.listdir(path_del)
+
+        # for item1 in test1:
+        #     if item1.endswith(".pdf"):
+        #         print('os.path.join >>> ', os.path.join(path_del, item1))
+        #         os.remove(os.path.join(path_del, item1))
+
+        # directory = "qrcode_bin/"
+        # path_del2 = os.path.join(path_delete, directory)
+        # test = os.listdir(path_del2)
+
+        # for item in test:
+        #     if item.endswith(".jpg"):
+        #         os.remove(os.path.join(path_del2, item))
+        #     if item.endswith(".pdf"):
+        #         os.remove(os.path.join(path_del2, item))
+
     def startAnimation(self):
         self.movie.start()
 
@@ -301,17 +324,23 @@ class popup_window(QWidget):                           # <===
         p.fillRect(self.rect(), QColor('gainsboro'))
 
     def mousePressEvent(self, event):
-        self.old_pos = event.screenPos()
+        # self.old_pos = event.screenPos()
+        self.dragPos = event.globalPos()
 
     def mouseMoveEvent(self, event):
-        if self.clicked:
-            dx = self.old_pos.x() - event.screenPos().x()
-            dy = self.old_pos.y() - event.screenPos().y()
-            self.move(self.pos().x() - dx, self.pos().y() - dy)
-        self.old_pos = event.screenPos()
-        self.clicked = True
+        # if self.clicked:
+        #     dx = self.old_pos.x() - event.screenPos().x()
+        #     dy = self.old_pos.y() - event.screenPos().y()
+        #     self.move(self.pos().x() - dx, self.pos().y() - dy)
+        # self.old_pos = event.screenPos()
+        # self.clicked = True
 
-        return QWidget.mouseMoveEvent(self, event)
+        if event.buttons() == QtCore.Qt.LeftButton:
+            self.move(self.pos() + event.globalPos() - self.dragPos)
+            self.dragPos = event.globalPos()
+            event.accept()
+
+        # return QWidget.mouseMoveEvent(self, event)
 
     def center(self):
         qr = self.frameGeometry()
@@ -323,227 +352,292 @@ class popup_window(QWidget):                           # <===
         self.close()
 
     def accepted(self):
-        global textEdit_EmpNo_text
-        global textEdit_Amount_text
-        global textEdit_AmountStart_text
-        global textEdit_KanbanId_text
-        global textEdit_Line_text
-        global textEdit_PartId_text
-        global textEdit_PartNo_text
-        global textEdit_timeEdit
-        global textEdit_comboBox
-        global textEdit_calendarEdit
 
-        # Data to be encoded
+        try:
+            global textEdit_EmpNo_text
+            global textEdit_Amount_text
+            global textEdit_AmountStart_text
+            global textEdit_KanbanId_text
+            global textEdit_Line_text
+            global textEdit_PartId_text
+            global textEdit_PartNo_text
+            global textEdit_timeEdit
+            global textEdit_comboBox
+            global textEdit_calendarEdit
 
-        self.startAnimation()
+            # Data to be encoded
 
-        date_time_stamp_now = datetime.now()
-        timestampStr_now = date_time_stamp_now.strftime("%d%m%Y-%H%M%S")
+            self.startAnimation()
 
-        conn = sqlite3.connect('qr_code.db')
-        conn.execute("INSERT INTO QRCODE (Employee_ID,\
-        Amount,\
-        Amount_start,\
-        Kanban_ID,\
-        Line,\
-        Part_ID,\
-        Part_NO,\
-        Time_select,\
-        Shift,\
-        Date_select,\
-        Date_time_stamp)\
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (textEdit_EmpNo_text, textEdit_Amount_text, textEdit_AmountStart_text, textEdit_KanbanId_text, textEdit_Line_text, textEdit_PartId_text, textEdit_PartNo_text, textEdit_timeEdit, textEdit_comboBox, textEdit_calendarEdit, timestampStr_now))
-        conn.commit()
-        conn.close()
+            date_time_stamp_now = datetime.now()
+            timestampStr_now = date_time_stamp_now.strftime("%d%m%Y-%H%M%S")
 
-        dateTimeObj = datetime.now()
-        list_path = []
-        for i in range(int(textEdit_Amount_text)):
-            print(i)
-            if i == 0:
+            conn = sqlite3.connect(db_path)
+            conn.execute("INSERT INTO QRCODE (Employee_ID,\
+            Amount,\
+            Amount_start,\
+            Kanban_ID,\
+            Line,\
+            Part_ID,\
+            Part_NO,\
+            Time_select,\
+            Shift,\
+            Date_select,\
+            Date_time_stamp)\
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (textEdit_EmpNo_text, textEdit_Amount_text, textEdit_AmountStart_text, textEdit_KanbanId_text, textEdit_Line_text, textEdit_PartId_text, textEdit_PartNo_text, textEdit_timeEdit, textEdit_comboBox, textEdit_calendarEdit, timestampStr_now))
+            conn.commit()
+            conn.close()
 
-                str_textEdit_AmountStart_text = str(
-                    textEdit_AmountStart_text)
-                zero_filled_number = str_textEdit_AmountStart_text.zfill(4)
-                dateFormattedYear = dateTimeObj.strftime("%y")
-                dateFormattedMonth = dateTimeObj.strftime("%m")
-                dateFormattedDay = dateTimeObj.strftime("%d")
-                CodeGen = dateFormattedYear + dateFormattedMonth + \
-                    dateFormattedDay + textEdit_comboBox + zero_filled_number
-                data = {"Part_ID": textEdit_PartId_text,
-                        "CodeGen": CodeGen,
-                        }
-                # Encoding data using make() function
-                img = qrcode.make(data)
+            dateTimeObj = datetime.now()
+            list_path = []
+            for i in range(int(textEdit_Amount_text)):
+                print(i)
+                if i == 0:
 
-                # Saving as an image file
-                timestampStr = date_time_stamp_now.strftime("_%H-%M-%S")
-                path_qrcode = 'qrcode_bin/QRCode_' + CodeGen + timestampStr
+                    str_textEdit_AmountStart_text = str(
+                        int(textEdit_AmountStart_text))
+                    zero_filled_number = str_textEdit_AmountStart_text.zfill(4)
+                    dateFormattedYear = dateTimeObj.strftime("%y")
+                    dateFormattedMonth = dateTimeObj.strftime("%m")
+                    dateFormattedDay = dateTimeObj.strftime("%d")
+                    CodeGen = dateFormattedYear + dateFormattedMonth + \
+                        dateFormattedDay + textEdit_comboBox + zero_filled_number
+                    dateFormattedHourMinute = dateTimeObj.strftime("%H%M")
+                    data = dateFormattedYear + dateFormattedMonth + dateFormattedDay + \
+                        textEdit_comboBox + zero_filled_number + \
+                        dateFormattedHourMinute + textEdit_PartNo_text
+                    # data = {"Part_ID": textEdit_PartId_text,
+                    #         "CodeGen": CodeGen,
+                    #         }
+                    # Encoding data using make() function
+                    img = qrcode.make(data)
 
-                list_path.append(path_qrcode)
+                    # Saving as an image file
+                    timestampStr = date_time_stamp_now.strftime("_%H-%M-%S")
+                    path_qrcode = 'qrcode_bin/QRCode_' + CodeGen + timestampStr
 
-                img.save(path_qrcode + '.jpg')
+                    path_folder_qr = os.path.dirname(os.path.abspath(__file__))
+                    path_qr = os.path.join(path_folder_qr, path_qrcode)
+                    # list_path.append(path_qrcode)
+                    list_path.append(path_qr)
 
-                pagesize = (127.92, 85.28)
+                    # img.save(path_qrcode + '.jpg')
+                    img.save(path_qr + '.jpg')
+                    pagesize = (127.92, 85.28)
 
-                pdf = canvas.Canvas(
-                    path_qrcode + '.pdf', pagesize=pagesize)
-                pdf.drawImage(path_qrcode + '.jpg',
-                              50, 20, 57.09, 57.09)
-                pdf.setFont("Times-Roman", 14)
-                pdf.drawString(10, 40, textEdit_PartId_text)
-                pdf.drawString(25, 12, CodeGen)
-                flow_obj = []
-                styles = getSampleStyleSheet()
-                text = ''''''
-                styleN = styles['Normal']
-                p_text = Paragraph(text, styleN)
-                flow_obj.append(p_text)
-                f = Frame(0, 0, 127.8, 85.1, showBoundary=1)
-                f.addFromList(flow_obj, pdf)
+                    # pdf = canvas.Canvas(
+                    #     path_qrcode + '.pdf', pagesize=pagesize)
+                    # pdf.drawImage(path_qrcode + '.jpg',
+                    #               50, 20, 57.09, 57.09)
 
-                pdf.save()
+                    pdf = canvas.Canvas(
+                        path_qr + '.pdf', pagesize=pagesize)
+                    pdf.drawImage(path_qr + '.jpg',
+                                  50, 20, 57.09, 57.09)
+                    pdf.setFont("Times-Roman", 14)
+                    pdf.drawString(10, 40, textEdit_PartId_text)
+                    pdf.drawString(25, 12, CodeGen)
+                    flow_obj = []
+                    styles = getSampleStyleSheet()
+                    text = ''''''
+                    styleN = styles['Normal']
+                    p_text = Paragraph(text, styleN)
+                    flow_obj.append(p_text)
+                    f = Frame(0, 0, 127.8, 85.1, showBoundary=1)
+                    f.addFromList(flow_obj, pdf)
 
-            else:
-                textEdit_AmountStart_text = int(
-                    textEdit_AmountStart_text) + 1
-                str_textEdit_AmountStart_text = str(
-                    textEdit_AmountStart_text)
-                zero_filled_number = str_textEdit_AmountStart_text.zfill(4)
-                dateFormattedYear = dateTimeObj.strftime("%y")
-                dateFormattedMonth = dateTimeObj.strftime("%m")
-                dateFormattedDay = dateTimeObj.strftime("%d")
-                CodeGen = dateFormattedYear + dateFormattedMonth + \
-                    dateFormattedDay + textEdit_comboBox + zero_filled_number
-                data = {"Part_ID": textEdit_PartId_text,
-                        "CodeGen": CodeGen,
-                        }
-                # Encoding data using make() function
-                img = qrcode.make(data)
-                # Saving as an image file
-                timestampStr = date_time_stamp_now.strftime("_%H-%M-%S")
-                path_qrcode = 'qrcode_bin/QRCode_' + CodeGen + timestampStr
+                    pdf.save()
 
-                list_path.append(path_qrcode)
+                else:
+                    textEdit_AmountStart_text = int(
+                        textEdit_AmountStart_text) + 1
+                    str_textEdit_AmountStart_text = str(
+                        textEdit_AmountStart_text)
+                    zero_filled_number = str_textEdit_AmountStart_text.zfill(4)
+                    dateFormattedYear = dateTimeObj.strftime("%y")
+                    dateFormattedMonth = dateTimeObj.strftime("%m")
+                    dateFormattedDay = dateTimeObj.strftime("%d")
+                    CodeGen = dateFormattedYear + dateFormattedMonth + \
+                        dateFormattedDay + textEdit_comboBox + zero_filled_number
+                    dateFormattedHourMinute = dateTimeObj.strftime("%H%M")
+                    data = dateFormattedYear + dateFormattedMonth + dateFormattedDay + \
+                        textEdit_comboBox + zero_filled_number + \
+                        dateFormattedHourMinute + textEdit_PartNo_text
+                    img = qrcode.make(data)
+                    # Saving as an image file
+                    timestampStr = date_time_stamp_now.strftime("_%H-%M-%S")
+                    path_qrcode = 'qrcode_bin/QRCode_' + CodeGen + timestampStr
+                    path_folder_qr = os.path.dirname(os.path.abspath(__file__))
+                    path_qr = os.path.join(path_folder_qr, path_qrcode)
 
-                img.save(path_qrcode + '.jpg')
+                    list_path.append(path_qr)
 
-                pagesize = (127.92, 85.28)
+                    # img.save(path_qrcode + '.jpg')
 
-                pdf = canvas.Canvas(
-                    path_qrcode + '.pdf', pagesize=pagesize)
-                pdf.drawImage(path_qrcode + '.jpg',
-                              50, 20, 57.09, 57.09)
-                pdf.setFont("Times-Roman", 14)
-                pdf.drawString(10, 40, textEdit_PartId_text)
-                pdf.drawString(25, 12, CodeGen)
-                flow_obj = []
-                styles = getSampleStyleSheet()
-                text = ''''''
-                styleN = styles['Normal']
-                p_text = Paragraph(text, styleN)
-                flow_obj.append(p_text)
-                f = Frame(0, 0, 127.8, 85.1, showBoundary=1)
-                f.addFromList(flow_obj, pdf)
+                    # pagesize = (127.92, 85.28)
 
-                pdf.save()
+                    # pdf = canvas.Canvas(
+                    #     path_qrcode + '.pdf', pagesize=pagesize)
+                    # pdf.drawImage(path_qrcode + '.jpg',
+                    #               50, 20, 57.09, 57.09)
 
-        message = ",\n".join(list_path)
-        message1 = "Generate QR code have successfully. \n" + message
+                    img.save(path_qr + '.jpg')
 
-        merger = PdfFileMerger()
-        for filename in list_path:
+                    pagesize = (127.92, 85.28)
 
-            merger.append(filename + ".pdf")
+                    pdf = canvas.Canvas(
+                        path_qr + '.pdf', pagesize=pagesize)
+                    pdf.drawImage(path_qr + '.jpg',
+                                  50, 20, 57.09, 57.09)
+                    pdf.setFont("Times-Roman", 14)
+                    pdf.drawString(10, 40, textEdit_PartId_text)
+                    pdf.drawString(25, 12, CodeGen)
+                    flow_obj = []
+                    styles = getSampleStyleSheet()
+                    text = ''''''
+                    styleN = styles['Normal']
+                    p_text = Paragraph(text, styleN)
+                    flow_obj.append(p_text)
+                    f = Frame(0, 0, 127.8, 85.1, showBoundary=1)
+                    f.addFromList(flow_obj, pdf)
 
-        timestampStr = date_time_stamp_now.strftime("_%H-%M-%S")
+                    pdf.save()
 
-        file_name_merge = "qrcode_pdf/document-output_" + timestampStr + ".pdf"
-        merger.write(file_name_merge)
+            message = ",\n".join(list_path)
+            message1 = "Generate QR code have successfully. \n" + message
 
-        merger.close()
+            merger = PdfFileMerger()
+            for filename in list_path:
 
-        # QMessageBox.about(self, "แจ้งเตือน",
-        #                   message1)
+                merger.append(filename + ".pdf")
 
-        unix_path = str(os.path.dirname(__file__))
+            timestampStr = date_time_stamp_now.strftime("_%H-%M-%S")
 
-        unix_path2 = unix_path.replace('\\', '/')
+            file_name_merge = "qrcode_pdf/document-output_" + timestampStr + ".pdf"
+            path_folder_merge = os.path.dirname(os.path.abspath(__file__))
+            path_merge = os.path.join(path_folder_merge, file_name_merge)
 
-        filePath = unix_path2 + '/' + file_name_merge
+            merger.write(path_merge)
 
-        if not filePath:
-            return
-        file_extension = os.path.splitext(filePath)[1]
+            merger.close()
 
-        if file_extension == ".pdf":
-            printer = QPrinter(QPrinter.HighResolution)
-            dialog = QPrintDialog(printer, self)
-            if dialog.exec_() == QPrintDialog.Accepted:
-                with tempfile.TemporaryDirectory() as path:
-                    images = convert_from_path(
-                        filePath, dpi=300, output_folder=path)
-                    painter = QPainter()
-                    painter.begin(printer)
-                    for i, image in enumerate(images):
-                        if i > 0:
-                            printer.newPage()
-                        rect = painter.viewport()
-                        qtImage = ImageQt(image)
-                        qtImageScaled = qtImage.scaled(
-                            rect.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation)
-                        painter.drawImage(rect, qtImageScaled)
-                    painter.end()
+            try:
+                # some code
 
-        else:
-            pass
-#####################################################
-        self.stopAnimation()
-        QMessageBox.about(self, "แจ้งเตือน",
-                          "Send data for print Successfully! ")
+                import win32api
 
-        directory1 = "qrcode_pdf/"
-        test1 = os.listdir(directory1)
+                win32api.ShellExecute(0, "print", path_merge, None,  ".",  0)
 
-        for item1 in test1:
-            # if item.endswith(".jpg"):
-            #     os.remove(os.path.join(directory, item))
-            if item1.endswith(".pdf"):
-                os.remove(os.path.join(directory1, item1))
+                # os.startfile(path_merge, "print")
+                time.sleep(5)
 
-        directory = "qrcode_bin/"
-        test = os.listdir(directory)
-        for item in test:
-            if item.endswith(".jpg"):
-                os.remove(os.path.join(directory, item))
-            if item.endswith(".pdf"):
-                os.remove(os.path.join(directory, item))
+                for p in psutil.process_iter():  # Close Acrobat after printing the PDF
+                    if 'AcroRd' in str(p):
+                        p.kill()
 
-#         try:
-#             directory = "qrcode_bin/"
-#             test = os.listdir(directory)
+                QMessageBox.about(self, "แจ้งเตือน",
+                                  "Send data for print Successfully! ")
 
-#             for item in test:
-#                 if item.endswith(".jpg"):
-#                     os.remove(os.path.join(directory, item))
-#                 if item.endswith(".pdf"):
-#                     os.remove(os.path.join(directory, item))
-#         except:  # PermissionError: [WinError 32] The process cannot access the file because it is being used by another process
-#             for proc in psutil.process_iter():
-#                 if proc.name() == 'python.exe':
-#                     proc.kill()
+    #####################################################
+            # if not path_merge:
+            #     return
+            # file_extension = os.path.splitext(path_merge)[1]
 
-#             directory = "qrcode_bin/"
-#             test = os.listdir(directory)
+            # if file_extension == ".pdf":
+            #     printer = QPrinter(QPrinter.HighResolution)
+            #     dialog = QPrintDialog(printer, self)
+            #     if dialog.exec_() == QPrintDialog.Accepted:
+            #         with tempfile.TemporaryDirectory() as path:
+            #             images = convert_from_path(
+            #                 path_merge, dpi=300, output_folder=path)
+            #             painter = QPainter()
+            #             painter.begin(printer)
+            #             for i, image in enumerate(images):
+            #                 if i > 0:
+            #                     printer.newPage()
+            #                 rect = painter.viewport()
+            #                 qtImage = ImageQt(image)
+            #                 qtImageScaled = qtImage.scaled(
+            #                     rect.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation)
+            #                 painter.drawImage(rect, qtImageScaled)
+            #             painter.end()
 
-#             for item in test:
-#                 if item.endswith(".jpg"):
-#                     os.remove(os.path.join(directory, item))
-#                 if item.endswith(".pdf"):
-#                     os.remove(os.path.join(directory, item))
+            #             QMessageBox.about(self, "แจ้งเตือน",
+            #                               "Send data for print Successfully! ")
+            #     else:
+            #         self.close()
 
-        self.close()
+            # else:
+            #     pass
+    # ลบไฟล์ pdf
+
+                directory1 = "qrcode_pdf/"
+                path_delete = os.path.dirname(os.path.abspath(__file__))
+                path_del = os.path.join(path_delete, directory1)
+                print('path del >>> ', path_del)
+
+                test1 = os.listdir(path_del)
+
+                for item1 in test1:
+                    # if item.endswith(".jpg"):
+                    #     os.remove(os.path.join(directory, item))
+                    if item1.endswith(".pdf"):
+                        print('os.path.join >>> ',
+                              os.path.join(path_del, item1))
+                        os.remove(os.path.join(path_del, item1))
+    # ลบไฟล์ pdf
+
+    # ลบไฟล์ pdf และ รูป
+
+                directory = "qrcode_bin/"
+                path_del2 = os.path.join(path_delete, directory)
+                test = os.listdir(path_del2)
+
+                for item in test:
+                    if item.endswith(".jpg"):
+                        os.remove(os.path.join(path_del2, item))
+                    if item.endswith(".pdf"):
+                        os.remove(os.path.join(path_del2, item))
+    # ลบไฟล์ pdf และ รูป
+            except Exception as e:
+                errr = "ERROR : "+str(e)
+                QMessageBox.about(self, "แจ้งเตือน",
+                                  errr)
+
+    #####################################################
+
+    #         try:
+    #             directory = "qrcode_bin/"
+    #             test = os.listdir(directory)
+
+    #             for item in test:
+    #                 if item.endswith(".jpg"):
+    #                     os.remove(os.path.join(directory, item))
+    #                 if item.endswith(".pdf"):
+    #                     os.remove(os.path.join(directory, item))
+    #         except:  # PermissionError: [WinError 32] The process cannot access the file because it is being used by another process
+    #             for proc in psutil.process_iter():
+    #                 if proc.name() == 'python.exe':
+    #                     proc.kill()
+
+    #             directory = "qrcode_bin/"
+    #             test = os.listdir(directory)
+
+    #             for item in test:
+    #                 if item.endswith(".jpg"):
+    #                     os.remove(os.path.join(directory, item))
+    #                 if item.endswith(".pdf"):
+    #                     os.remove(os.path.join(directory, item))
+
+            self.close()
+        except OSError as err:
+            errr = "OS error: : "+str(err)
+            QMessageBox.about(self, "แจ้งเตือน",
+                              errr)
+
+        except:
+            QMessageBox.about(self, "แจ้งเตือน",
+                              "Unexpected error occured")
 
     def reject(self):
         self.close()
@@ -584,7 +678,7 @@ class admin_page(QWidget):                           # <===
         self.label_2 = QtWidgets.QLabel(self)
         self.label_2.setGeometry(QtCore.QRect(20, 10, 141, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(16)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
@@ -600,7 +694,7 @@ class admin_page(QWidget):                           # <===
         self.label = QtWidgets.QLabel(self.tab)
         self.label.setGeometry(QtCore.QRect(10, 10, 91, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(12)
         self.label.setFont(font)
         self.label.setObjectName("label")
@@ -652,7 +746,7 @@ class admin_page(QWidget):                           # <===
         self.table_part_kanban.horizontalHeader().setSectionResizeMode(
             2, QtWidgets.QHeaderView.Stretch)
 
-        conn5 = sqlite3.connect('qr_code.db')
+        conn5 = sqlite3.connect(db_path)
 
         result1 = conn5.execute("SELECT * FROM PART_KANBAN")
         self.table_part_kanban.setRowCount(0)
@@ -755,7 +849,7 @@ class admin_page(QWidget):                           # <===
         self.table_line.horizontalHeader().setSectionResizeMode(
             0, QtWidgets.QHeaderView.Stretch)
 
-        conn5 = sqlite3.connect('qr_code.db')
+        conn5 = sqlite3.connect(db_path)
 
         result1 = conn5.execute("SELECT * FROM LINE")
         self.table_line.setRowCount(0)
@@ -819,9 +913,9 @@ class admin_page(QWidget):                           # <===
             self.style().standardIcon(QStyle.SP_DialogApplyButton))
 
         self.label_3 = QtWidgets.QLabel(self.tab_2)
-        self.label_3.setGeometry(QtCore.QRect(10, 10, 121, 31))
+        self.label_3.setGeometry(QtCore.QRect(10, 10, 130, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(12)
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
@@ -841,7 +935,7 @@ class admin_page(QWidget):                           # <===
         self.tableWidget.horizontalHeader().setSectionResizeMode(
             2, QtWidgets.QHeaderView.Stretch)
 
-        conn5 = sqlite3.connect('qr_code.db')
+        conn5 = sqlite3.connect(db_path)
 
         result1 = conn5.execute("SELECT * FROM ADMIN_USER")
         self.tableWidget.setRowCount(0)
@@ -864,9 +958,16 @@ class admin_page(QWidget):                           # <===
         self.delete_admin_user_button.setIcon(
             self.style().standardIcon(QStyle.SP_TrashIcon))
 
-        self.lineEdit_9 = QtWidgets.QLineEdit(self.tab_2)
-        self.lineEdit_9.setGeometry(QtCore.QRect(10, 50, 631, 31))
-        self.lineEdit_9.setObjectName("lineEdit_9")
+        self.search_admin = QtWidgets.QLineEdit(self.tab_2)
+        self.search_admin.setGeometry(QtCore.QRect(10, 50, 631, 31))
+        self.search_admin.setObjectName("search_admin")
+        self.search_admin.textChanged.connect(self.findName_admin)
+        self.search_admin.setStyleSheet("\n"
+                                        "border-style: outset;\n"
+                                        "border-width: 1px;\n"
+                                        "border-radius: 7px;\n"
+                                        "border-color: black;\n"
+                                        "padding: 4px;")
 
         self.tabWidget.addTab(self.tab_2, "")
 
@@ -913,7 +1014,7 @@ class admin_page(QWidget):                           # <===
         self.pushButton_2.setText(_translate("Dialog", "Add"))
         self.label_3.setText(_translate("Dialog", "ADD Employee ID"))
         self.delete_admin_user_button.setText(_translate("Dialog", "Delete"))
-        self.lineEdit_9.setPlaceholderText(
+        self.search_admin.setPlaceholderText(
             _translate("Dialog", "Search . . ."))
         self.tabWidget.setTabText(self.tabWidget.indexOf(
             self.tab_2), _translate("Dialog", "Add admin"))
@@ -936,17 +1037,23 @@ class admin_page(QWidget):                           # <===
         p.fillRect(self.rect(), QColor(128, 128, 128, 128))
 
     def mousePressEvent(self, event):
-        self.old_pos = event.screenPos()
+        # self.old_pos = event.screenPos()
+        self.dragPos = event.globalPos()
 
     def mouseMoveEvent(self, event):
-        if self.clicked:
-            dx = self.old_pos.x() - event.screenPos().x()
-            dy = self.old_pos.y() - event.screenPos().y()
-            self.move(self.pos().x() - dx, self.pos().y() - dy)
-        self.old_pos = event.screenPos()
-        self.clicked = True
+        # if self.clicked:
+        #     dx = self.old_pos.x() - event.screenPos().x()
+        #     dy = self.old_pos.y() - event.screenPos().y()
+        #     self.move(self.pos().x() - dx, self.pos().y() - dy)
+        # self.old_pos = event.screenPos()
+        # self.clicked = True
 
-        return QWidget.mouseMoveEvent(self, event)
+        if event.buttons() == QtCore.Qt.LeftButton:
+            self.move(self.pos() + event.globalPos() - self.dragPos)
+            self.dragPos = event.globalPos()
+            event.accept()
+
+        # return QWidget.mouseMoveEvent(self, event)
 
     def findName_line(self):
         name3 = self.search_line.text().lower()
@@ -964,8 +1071,17 @@ class admin_page(QWidget):                           # <===
             self.table_part_kanban.setRowHidden(
                 row1, name1 not in item1.text().lower())
 
+    def findName_admin(self):
+        name1 = self.search_admin.text().lower()
+        for row1 in range(self.tableWidget.rowCount()):
+            item1 = self.tableWidget.item(row1, 0)
+
+            self.tableWidget.setRowHidden(
+                row1, name1 not in item1.text().lower())
+
     def add_part_kanban(self):
-        connect = sqlite3.connect('qr_code.db')
+
+        connect = sqlite3.connect(db_path)
 
         part_id = self.lineEdit_Part_ID.text()
         part_no = self.lineEdit_Part_NO.text()
@@ -1057,7 +1173,7 @@ class admin_page(QWidget):                           # <===
     def load_database_part_kanban(self):
         while self.table_part_kanban.rowCount() > 0:
             self.table_part_kanban.removeRow(0)
-        conn4 = sqlite3.connect('qr_code.db')
+        conn4 = sqlite3.connect(db_path)
         result = conn4.execute("SELECT * FROM PART_KANBAN")
         self.table_part_kanban.setRowCount(0)
         for row_number, row_data in enumerate(result):
@@ -1069,7 +1185,7 @@ class admin_page(QWidget):                           # <===
         conn4.commit()
 
     def add_line(self):
-        connect = sqlite3.connect('qr_code.db')
+        connect = sqlite3.connect(db_path)
 
         line = self.lineEdit_Line.text()
 
@@ -1098,7 +1214,7 @@ class admin_page(QWidget):                           # <===
                 textEmployee_on = Employee_on
 
                 connect.execute("INSERT INTO LINE (LINE,Create_date,EMPLOYEE_ID) VALUES (?, ? , ?)",
-                                (line, date_now_convert,textEmployee_on))
+                                (line, date_now_convert, textEmployee_on))
 
                 connect.commit()
 
@@ -1123,7 +1239,7 @@ class admin_page(QWidget):                           # <===
     def load_database_line(self):
         while self.table_line.rowCount() > 0:
             self.table_line.removeRow(0)
-        conn4 = sqlite3.connect('qr_code.db')
+        conn4 = sqlite3.connect(db_path)
         result = conn4.execute("SELECT LINE FROM LINE")
         self.table_line.setRowCount(0)
         for row_number, row_data in enumerate(result):
@@ -1144,7 +1260,7 @@ class admin_page(QWidget):                           # <===
         returnValue = msgBox.exec()
         if returnValue == QMessageBox.Ok:
 
-            conne = sqlite3.connect('qr_code.db')
+            conne = sqlite3.connect(db_path)
 
             result1 = conne.execute("SELECT * FROM PART_KANBAN")
 
@@ -1180,7 +1296,7 @@ class admin_page(QWidget):                           # <===
         returnValue = msgBox.exec()
         if returnValue == QMessageBox.Ok:
 
-            conne = sqlite3.connect('qr_code.db')
+            conne = sqlite3.connect(db_path)
 
             result1 = conne.execute("SELECT * FROM LINE")
 
@@ -1214,7 +1330,8 @@ class admin_page(QWidget):                           # <===
 
         returnValue = msgBox.exec()
         if returnValue == QMessageBox.Ok:
-            conn4 = sqlite3.connect('qr_code.db')
+
+            conn4 = sqlite3.connect(db_path)
 
             result = conn4.execute("SELECT * FROM ADMIN_USER")
 
@@ -1241,7 +1358,7 @@ class admin_page(QWidget):                           # <===
     def load_database_admin(self):
         while self.tableWidget.rowCount() > 0:
             self.tableWidget.removeRow(0)
-        conn5 = sqlite3.connect('qr_code.db')
+        conn5 = sqlite3.connect(db_path)
         result1 = conn5.execute("SELECT * FROM ADMIN_USER")
         self.tableWidget.setRowCount(0)
         for row_number1, row_data1 in enumerate(result1):
@@ -1256,7 +1373,7 @@ class admin_page(QWidget):                           # <===
         conn5.close()
 
     def add_admin_user(self):
-        conn6 = sqlite3.connect('qr_code.db')
+        conn6 = sqlite3.connect(db_path)
         admin_new = self.lineEdit_3.text()
 
         # password_salt = os.urandom(32).hex()
@@ -1301,7 +1418,7 @@ class admin_page(QWidget):                           # <===
 #         self.label_2 = QtWidgets.QLabel(self)
 #         self.label_2.setGeometry(QtCore.QRect(20, 10, 141, 31))
 #         font = QtGui.QFont()
-#         font.setFamily("Mitr")
+#         font.setFamily("Times")
 #         font.setPointSize(16)
 #         self.label_2.setFont(font)
 #         self.label_2.setObjectName("label_2")
@@ -1345,7 +1462,7 @@ class admin_page(QWidget):                           # <===
 #         # self.tableWidget.horizontalHeader().setSectionResizeMode(
 #         #     3, QtWidgets.QHeaderView.Stretch)
 
-#         # conn4 = sqlite3.connect('qr_code.db')
+#         # conn4 = sqlite3.connect(db_path)
 
 #         # result = conn4.execute("SELECT * FROM PART_DETAIL")
 #         # self.tableWidget.setRowCount(0)
@@ -1372,7 +1489,7 @@ class admin_page(QWidget):                           # <===
 #         # self.label = QtWidgets.QLabel(self.tab)
 #         # self.label.setGeometry(QtCore.QRect(10, 10, 91, 31))
 #         # font = QtGui.QFont()
-#         # font.setFamily("Mitr")
+#         # font.setFamily("Times")
 #         # font.setPointSize(12)
 #         # self.label.setFont(font)
 #         # self.label.setObjectName("label")
@@ -1388,7 +1505,7 @@ class admin_page(QWidget):                           # <===
 #         self.label = QtWidgets.QLabel(self.tab)
 #         self.label.setGeometry(QtCore.QRect(10, 10, 91, 31))
 #         font = QtGui.QFont()
-#         font.setFamily("Mitr")
+#         font.setFamily("Times")
 #         font.setPointSize(12)
 #         self.label.setFont(font)
 #         self.label.setObjectName("label")
@@ -1410,7 +1527,7 @@ class admin_page(QWidget):                           # <===
 #         self.tableWidget_Part_ID.horizontalHeader().setSectionResizeMode(
 #             0, QtWidgets.QHeaderView.Stretch)
 
-#         conn_part_id = sqlite3.connect('qr_code.db')
+#         conn_part_id = sqlite3.connect(db_path)
 
 #         result = conn_part_id.execute("SELECT * FROM PART_ID")
 #         self.tableWidget_Part_ID.setRowCount(0)
@@ -1436,7 +1553,7 @@ class admin_page(QWidget):                           # <===
 #         self.tableWidget_Part_NO.horizontalHeader().setSectionResizeMode(
 #             0, QtWidgets.QHeaderView.Stretch)
 
-#         conn_part_no = sqlite3.connect('qr_code.db')
+#         conn_part_no = sqlite3.connect(db_path)
 
 #         result = conn_part_no.execute("SELECT * FROM PART_NO")
 #         self.tableWidget_Part_NO.setRowCount(0)
@@ -1462,7 +1579,7 @@ class admin_page(QWidget):                           # <===
 #         self.tableWidget_Line.horizontalHeader().setSectionResizeMode(
 #             0, QtWidgets.QHeaderView.Stretch)
 
-#         conn_line = sqlite3.connect('qr_code.db')
+#         conn_line = sqlite3.connect(db_path)
 
 #         result = conn_line.execute("SELECT * FROM LINE")
 #         self.tableWidget_Line.setRowCount(0)
@@ -1488,7 +1605,7 @@ class admin_page(QWidget):                           # <===
 #         self.tableWidget_Kanban_ID.horizontalHeader().setSectionResizeMode(
 #             0, QtWidgets.QHeaderView.Stretch)
 
-#         conn_kanban = sqlite3.connect('qr_code.db')
+#         conn_kanban = sqlite3.connect(db_path)
 
 #         result = conn_kanban.execute("SELECT * FROM KANBAN_ID")
 #         self.tableWidget_Kanban_ID.setRowCount(0)
@@ -1678,7 +1795,7 @@ class admin_page(QWidget):                           # <===
 #         self.tableWidget_2.horizontalHeader().setSectionResizeMode(
 #             2, QtWidgets.QHeaderView.Stretch)
 
-#         conn5 = sqlite3.connect('qr_code.db')
+#         conn5 = sqlite3.connect(db_path)
 
 #         result1 = conn5.execute("SELECT * FROM ADMIN_USER")
 #         self.tableWidget_2.setRowCount(0)
@@ -1725,7 +1842,7 @@ class admin_page(QWidget):                           # <===
 #         self.label_3 = QtWidgets.QLabel(self.tab_2)
 #         self.label_3.setGeometry(QtCore.QRect(10, 10, 121, 31))
 #         font = QtGui.QFont()
-#         font.setFamily("Mitr")
+#         font.setFamily("Times")
 #         font.setPointSize(12)
 #         self.label_3.setFont(font)
 #         self.label_3.setObjectName("label_3")
@@ -1870,7 +1987,7 @@ class admin_page(QWidget):                           # <===
 #                 row4, name4 not in item4.text().lower())
 
 #     def add_part_id(self):
-#         connect = sqlite3.connect('qr_code.db')
+#         connect = sqlite3.connect(db_path)
 
 #         part_id = self.lineEdit_Part_ID.text()
 
@@ -1920,7 +2037,7 @@ class admin_page(QWidget):                           # <===
 #             connect.close()
 
 #     def add_part_no(self):
-#         connect = sqlite3.connect('qr_code.db')
+#         connect = sqlite3.connect(db_path)
 
 #         part_no = self.lineEdit_Part_NO.text()
 
@@ -1970,7 +2087,7 @@ class admin_page(QWidget):                           # <===
 #             connect.close()
 
 #     def add_line(self):
-#         connect = sqlite3.connect('qr_code.db')
+#         connect = sqlite3.connect(db_path)
 
 #         line = self.lineEdit_Line.text()
 
@@ -2020,7 +2137,7 @@ class admin_page(QWidget):                           # <===
 #             connect.close()
 
 #     def add_kanban(self):
-#         connect = sqlite3.connect('qr_code.db')
+#         connect = sqlite3.connect(db_path)
 
 #         kanban = self.lineEdit_Kanban_ID.text()
 
@@ -2070,7 +2187,7 @@ class admin_page(QWidget):                           # <===
 #             connect.close()
 
 #     def add_admin_user(self):
-#         conn6 = sqlite3.connect('qr_code.db')
+#         conn6 = sqlite3.connect(db_path)
 #         admin_new = self.lineEdit_3.text()
 
 #         # password_salt = os.urandom(32).hex()
@@ -2129,7 +2246,7 @@ class admin_page(QWidget):                           # <===
 
 #         returnValue = msgBox.exec()
 #         if returnValue == QMessageBox.Ok:
-#             conn4 = sqlite3.connect('qr_code.db')
+#             conn4 = sqlite3.connect(db_path)
 
 #             result = conn4.execute("SELECT * FROM ADMIN_USER")
 
@@ -2164,7 +2281,7 @@ class admin_page(QWidget):                           # <===
 #         returnValue = msgBox.exec()
 #         if returnValue == QMessageBox.Ok:
 
-#             conne = sqlite3.connect('qr_code.db')
+#             conne = sqlite3.connect(db_path)
 
 #             result1 = conne.execute("SELECT * FROM PART_ID")
 
@@ -2199,7 +2316,7 @@ class admin_page(QWidget):                           # <===
 #         returnValue = msgBox.exec()
 #         if returnValue == QMessageBox.Ok:
 
-#             conne = sqlite3.connect('qr_code.db')
+#             conne = sqlite3.connect(db_path)
 
 #             result1 = conne.execute("SELECT * FROM PART_NO")
 
@@ -2234,7 +2351,7 @@ class admin_page(QWidget):                           # <===
 #         returnValue = msgBox.exec()
 #         if returnValue == QMessageBox.Ok:
 
-#             conne = sqlite3.connect('qr_code.db')
+#             conne = sqlite3.connect(db_path)
 
 #             result1 = conne.execute("SELECT * FROM LINE")
 
@@ -2269,7 +2386,7 @@ class admin_page(QWidget):                           # <===
 #         returnValue = msgBox.exec()
 #         if returnValue == QMessageBox.Ok:
 
-#             conne = sqlite3.connect('qr_code.db')
+#             conne = sqlite3.connect(db_path)
 
 #             result1 = conne.execute("SELECT * FROM KANBAN_ID")
 
@@ -2296,7 +2413,7 @@ class admin_page(QWidget):                           # <===
 #     def load_database_part_id(self):
 #         while self.tableWidget_Part_ID.rowCount() > 0:
 #             self.tableWidget_Part_ID.removeRow(0)
-#         conn4 = sqlite3.connect('qr_code.db')
+#         conn4 = sqlite3.connect(db_path)
 #         result = conn4.execute("SELECT * FROM PART_ID")
 #         self.tableWidget_Part_ID.setRowCount(0)
 #         for row_number, row_data in enumerate(result):
@@ -2310,7 +2427,7 @@ class admin_page(QWidget):                           # <===
 #     def load_database_part_no(self):
 #         while self.tableWidget_Part_NO.rowCount() > 0:
 #             self.tableWidget_Part_NO.removeRow(0)
-#         conn4 = sqlite3.connect('qr_code.db')
+#         conn4 = sqlite3.connect(db_path)
 #         result = conn4.execute("SELECT * FROM PART_NO")
 #         self.tableWidget_Part_NO.setRowCount(0)
 #         for row_number, row_data in enumerate(result):
@@ -2324,7 +2441,7 @@ class admin_page(QWidget):                           # <===
 #     def load_database_line(self):
 #         while self.tableWidget_Line.rowCount() > 0:
 #             self.tableWidget_Line.removeRow(0)
-#         conn4 = sqlite3.connect('qr_code.db')
+#         conn4 = sqlite3.connect(db_path)
 #         result = conn4.execute("SELECT * FROM LINE")
 #         self.tableWidget_Line.setRowCount(0)
 #         for row_number, row_data in enumerate(result):
@@ -2338,7 +2455,7 @@ class admin_page(QWidget):                           # <===
 #     def load_database_kanban(self):
 #         while self.tableWidget_Kanban_ID.rowCount() > 0:
 #             self.tableWidget_Kanban_ID.removeRow(0)
-#         conn4 = sqlite3.connect('qr_code.db')
+#         conn4 = sqlite3.connect(db_path)
 #         result = conn4.execute("SELECT * FROM KANBAN_ID")
 #         self.tableWidget_Kanban_ID.setRowCount(0)
 #         for row_number, row_data in enumerate(result):
@@ -2352,7 +2469,7 @@ class admin_page(QWidget):                           # <===
 #     def load_database_admin(self):
 #         while self.tableWidget_2.rowCount() > 0:
 #             self.tableWidget_2.removeRow(0)
-#         conn5 = sqlite3.connect('qr_code.db')
+#         conn5 = sqlite3.connect(db_path)
 #         result1 = conn5.execute("SELECT * FROM ADMIN_USER")
 #         self.tableWidget_2.setRowCount(0)
 #         for row_number1, row_data1 in enumerate(result1):
@@ -2407,7 +2524,7 @@ class Window2(QWidget):
         self.label = QtWidgets.QLabel(self.frame)
         self.label.setGeometry(QtCore.QRect(190, 110, 181, 41))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(20)
         self.label.setFont(font)
         self.label.setObjectName("label")
@@ -2509,17 +2626,23 @@ class Window2(QWidget):
         p.fillRect(self.rect(), QColor(128, 128, 128, 128))
 
     def mousePressEvent(self, event):
-        self.old_pos = event.screenPos()
+        # self.old_pos = event.screenPos()
+        self.dragPos = event.globalPos()
 
     def mouseMoveEvent(self, event):
-        if self.clicked:
-            dx = self.old_pos.x() - event.screenPos().x()
-            dy = self.old_pos.y() - event.screenPos().y()
-            self.move(self.pos().x() - dx, self.pos().y() - dy)
-        self.old_pos = event.screenPos()
-        self.clicked = True
+        # if self.clicked:
+        #     dx = self.old_pos.x() - event.screenPos().x()
+        #     dy = self.old_pos.y() - event.screenPos().y()
+        #     self.move(self.pos().x() - dx, self.pos().y() - dy)
+        # self.old_pos = event.screenPos()
+        # self.clicked = True
 
-        return QWidget.mouseMoveEvent(self, event)
+        if event.buttons() == QtCore.Qt.LeftButton:
+            self.move(self.pos() + event.globalPos() - self.dragPos)
+            self.dragPos = event.globalPos()
+            event.accept()
+
+        # return QWidget.mouseMoveEvent(self, event)
 
     def MainWindow(self):                                             # <===
         self.w = MainWindow()
@@ -2555,7 +2678,7 @@ class Window2(QWidget):
             hash.update(('%s' % (textPassword)).encode('utf-8'))
             password_hash = hash.hexdigest()
 
-            conn2 = sqlite3.connect('qr_code.db')
+            conn2 = sqlite3.connect(db_path)
             username_db = conn2.execute(
                 "SELECT Employee_ID,Password from ADMIN_USER Where Employee_ID = ?", (textUsername,))
 
@@ -2568,14 +2691,14 @@ class Window2(QWidget):
             conn2.close()
 
             if check_count > 0:
-                conn3 = sqlite3.connect('qr_code.db')
+                conn3 = sqlite3.connect(db_path)
                 username_db1 = conn3.execute(
                     "SELECT Employee_ID,Password from ADMIN_USER Where Employee_ID = ?", (textUsername,))
                 user_for_check = []
                 pass_for_check = []
 
                 for row3 in username_db1:
-                    print("hello")
+
                     user_for_check.append(row3[0])
                     pass_for_check.append(row3[1])
 
@@ -2620,6 +2743,10 @@ class MainWindow(QWidget):
 
         global textEdit_calendarEdit
         global textEdit_timeEdit
+        global db_path
+
+        path = os.path.dirname(os.path.abspath(__file__))
+        db_path = os.path.join(path, 'qr_code.db')
         textEdit_calendarEdit = datetime.today().strftime('%Y-%m-%d')
         textEdit_timeEdit = datetime.today().strftime('%H:%M')
         QWidget.__init__(self)
@@ -2662,11 +2789,12 @@ class MainWindow(QWidget):
         self.textEdit_EmpNo = QtWidgets.QLineEdit(self)
         self.textEdit_EmpNo.setGeometry(QtCore.QRect(160, 110, 151, 31))
         self.textEdit_EmpNo.setObjectName("textEdit_EmpNo")
-        reg_ex = QRegExp("[0-9]+.?[0-9]{,2}")
+        # reg_ex = QRegExp("[0-9]+.?[0-9]{,2}")
+        reg_ex = QRegExp("^[0-9]+$")
         input_validator = QRegExpValidator(reg_ex, self.textEdit_EmpNo)
         self.textEdit_EmpNo.setValidator(input_validator)
 
-        conz = sqlite3.connect('qr_code.db')
+        conz = sqlite3.connect(db_path)
         cursor = conz.execute("SELECT * from LINE")
         line_autocomplete = []
 
@@ -2683,7 +2811,7 @@ class MainWindow(QWidget):
 
         conz.close()
 
-        conn1 = sqlite3.connect('qr_code.db')
+        conn1 = sqlite3.connect(db_path)
         cursor1 = conn1.execute("SELECT DISTINCT PART_NO from PART_KANBAN ")
         part_no_autocomplete = []
 
@@ -2700,7 +2828,7 @@ class MainWindow(QWidget):
 
         conn1.close()
 
-        conn = sqlite3.connect('qr_code.db')
+        conn = sqlite3.connect(db_path)
 
         cursor = conn.execute("SELECT DISTINCT PART_ID from PART_KANBAN")
 
@@ -2720,7 +2848,7 @@ class MainWindow(QWidget):
 
         conn.close()
 
-        conn2 = sqlite3.connect('qr_code.db')
+        conn2 = sqlite3.connect(db_path)
         cursor = conn2.execute("SELECT KANBAN_ID from PART_KANBAN ")
         kanban_id_autocomplete = []
 
@@ -2741,16 +2869,16 @@ class MainWindow(QWidget):
         conn2.close()
 
         self.textEdit_AmountStart = QtWidgets.QLineEdit(self)
-        self.textEdit_AmountStart.setGeometry(QtCore.QRect(320, 460, 51, 31))
+        self.textEdit_AmountStart.setGeometry(QtCore.QRect(280, 460, 91, 31))
         self.textEdit_AmountStart.setObjectName("textEdit_AmountStart")
-        reg_ex = QRegExp("[0-9]+.?[0-9]{,2}")
+        reg_ex = QRegExp("^[0-9]+$")
         input_validator = QRegExpValidator(reg_ex, self.textEdit_AmountStart)
         self.textEdit_AmountStart.setValidator(input_validator)
 
         self.label = QtWidgets.QLabel(self)
         self.label.setGeometry(QtCore.QRect(20, 110, 111, 41))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(14)
         self.label.setFont(font)
         self.label.setObjectName("label")
@@ -2758,7 +2886,7 @@ class MainWindow(QWidget):
         self.label_2 = QtWidgets.QLabel(self)
         self.label_2.setGeometry(QtCore.QRect(20, 160, 81, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(14)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
@@ -2766,7 +2894,7 @@ class MainWindow(QWidget):
         self.label_3 = QtWidgets.QLabel(self)
         self.label_3.setGeometry(QtCore.QRect(20, 210, 61, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(14)
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
@@ -2774,7 +2902,7 @@ class MainWindow(QWidget):
         self.label_4 = QtWidgets.QLabel(self)
         self.label_4.setGeometry(QtCore.QRect(350, 120, 141, 21))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(16)
         self.label_4.setFont(font)
         self.label_4.setObjectName("label_4")
@@ -2782,7 +2910,7 @@ class MainWindow(QWidget):
         self.label_5 = QtWidgets.QLabel(self)
         self.label_5.setGeometry(QtCore.QRect(350, 360, 151, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(16)
         self.label_5.setFont(font)
         self.label_5.setObjectName("label_5")
@@ -2790,7 +2918,7 @@ class MainWindow(QWidget):
         self.label_6 = QtWidgets.QLabel(self)
         self.label_6.setGeometry(QtCore.QRect(20, 260, 121, 21))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(14)
         self.label_6.setFont(font)
         self.label_6.setObjectName("label_6")
@@ -2798,7 +2926,7 @@ class MainWindow(QWidget):
         self.label_7 = QtWidgets.QLabel(self)
         self.label_7.setGeometry(QtCore.QRect(20, 310, 101, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(14)
         self.label_7.setFont(font)
         self.label_7.setObjectName("label_7")
@@ -2806,7 +2934,7 @@ class MainWindow(QWidget):
         self.label_8 = QtWidgets.QLabel(self)
         self.label_8.setGeometry(QtCore.QRect(20, 360, 101, 21))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(14)
         self.label_8.setFont(font)
         self.label_8.setObjectName("label_8")
@@ -2814,24 +2942,15 @@ class MainWindow(QWidget):
         self.label_9 = QtWidgets.QLabel(self)
         self.label_9.setGeometry(QtCore.QRect(20, 460, 161, 41))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(14)
         self.label_9.setFont(font)
         self.label_9.setObjectName("label_9")
 
-        self.label_setup = QtWidgets.QLabel(self)
-        self.label_setup.setGeometry(QtCore.QRect(20, 420, 161, 41))
-        font = QtGui.QFont()
-        font.setFamily("Mitr")
-        font.setPointSize(16)
-        font.setUnderline(True)
-        self.label_setup.setFont(font)
-        self.label_setup.setObjectName("label_setup")
-
         self.label_10 = QtWidgets.QLabel(self)
-        self.label_10.setGeometry(QtCore.QRect(260, 460, 51, 41))
+        self.label_10.setGeometry(QtCore.QRect(190, 460, 91, 41))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(14)
         self.label_10.setFont(font)
         self.label_10.setObjectName("label_10")
@@ -2840,18 +2959,21 @@ class MainWindow(QWidget):
         self.timeEdit.setGeometry(QtCore.QRect(520, 360, 141, 31))
         self.timeEdit.setCalendarPopup(True)
         self.timeEdit.setObjectName("timeEdit")
+        font = QFont('Times', 8)
+        # setting font to the calendar
+        self.timeEdit.setFont(font)
 
         self.textEdit_Amount = QtWidgets.QLineEdit(self)
-        self.textEdit_Amount.setGeometry(QtCore.QRect(180, 460, 51, 31))
+        self.textEdit_Amount.setGeometry(QtCore.QRect(120, 460, 51, 31))
         self.textEdit_Amount.setObjectName("textEdit_Amount")
-        reg_ex = QRegExp("[0-9]+.?[0-9]{,2}")
+        reg_ex = QRegExp("^[0-9]+$")
         input_validator = QRegExpValidator(reg_ex, self.textEdit_Amount)
         self.textEdit_Amount.setValidator(input_validator)
 
         self.pushButton = QtWidgets.QPushButton(self)
         self.pushButton.setGeometry(QtCore.QRect(500, 50, 171, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.pushButton.setFont(font)
         self.pushButton.setObjectName("pushButton")
@@ -2866,6 +2988,8 @@ class MainWindow(QWidget):
         self.calendarWidget.setGridVisible(True)
         self.calendarWidget.setObjectName("calendarWidget")
         self.calendarWidget.selectionChanged.connect(self.calendar_date)
+        font = QFont('Times', 8)
+        self.calendarWidget.setFont(font)
 
         self.comboBox = QtWidgets.QComboBox(self)
         self.comboBox.setGeometry(QtCore.QRect(160, 211, 151, 31))
@@ -2874,11 +2998,13 @@ class MainWindow(QWidget):
         shift = ["A", "B"]
         # adding list of items to combo box
         self.comboBox.addItems(shift)
+        font = QFont('Times', 8)
+        self.comboBox.setFont(font)
 
         self.printButton = QtWidgets.QPushButton(self)
         self.printButton.setGeometry(QtCore.QRect(390, 460, 171, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.printButton.setFont(font)
         self.printButton.setObjectName("printButton")
@@ -2889,7 +3015,7 @@ class MainWindow(QWidget):
         self.pushButton_3 = QtWidgets.QPushButton(self)
         self.pushButton_3.setGeometry(QtCore.QRect(640, 10, 31, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.pushButton_3.setFont(font)
         self.pushButton_3.setObjectName("pushButton_3")
@@ -2900,7 +3026,7 @@ class MainWindow(QWidget):
         self.pushButton_4 = QtWidgets.QPushButton(self)
         self.pushButton_4.setGeometry(QtCore.QRect(570, 460, 101, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(10)
         self.pushButton_4.setFont(font)
         self.pushButton_4.setObjectName("pushButton_4")
@@ -2915,15 +3041,15 @@ class MainWindow(QWidget):
         self.line.setObjectName("line")
 
         self.line_2 = QtWidgets.QFrame(self)
-        self.line_2.setGeometry(QtCore.QRect(20, 400, 651, 20))
+        self.line_2.setGeometry(QtCore.QRect(20, 420, 651, 20))
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
 
         self.label_11 = QtWidgets.QLabel(self)
-        self.label_11.setGeometry(QtCore.QRect(20, 40, 331, 51))
+        self.label_11.setGeometry(QtCore.QRect(20, 40, 361, 51))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(20)
         # font.setUnderline(True)
         self.label_11.setFont(font)
@@ -2932,7 +3058,7 @@ class MainWindow(QWidget):
         self.label_12 = QtWidgets.QLabel(self)
         self.label_12.setGeometry(QtCore.QRect(500, 115, 161, 31))
         font = QtGui.QFont()
-        font.setFamily("Mitr")
+        font.setFamily("Times")
         font.setPointSize(15)
         font.setUnderline(True)
         self.label_12.setFont(font)
@@ -2949,7 +3075,7 @@ class MainWindow(QWidget):
 
         _translate = QtCore.QCoreApplication.translate
         self.setWindowTitle(_translate("Dialog", "Program Qrcode Generator"))
-        self.label.setText(_translate("Dialog", "รหัสพนักงาน"))
+        self.label.setText(_translate("Dialog", "Empolyee ID"))
         self.label_2.setText(_translate("Dialog", "Line"))
         self.label_3.setText(_translate("Dialog", "Shift"))
         self.label_4.setText(_translate("Dialog", "Select Date :"))
@@ -2957,16 +3083,16 @@ class MainWindow(QWidget):
         self.label_6.setText(_translate("Dialog", "Kanban ID"))
         self.label_7.setText(_translate("Dialog", "Part No."))
         self.label_8.setText(_translate("Dialog", "Part ID"))
-        self.label_9.setText(_translate("Dialog", "จำนวนที่ต้องการ"))
-        self.label_setup.setText(_translate("Dialog", "Setup Printer"))
-        self.label_10.setText(_translate("Dialog", "เริ่มที่"))
+        self.label_9.setText(_translate("Dialog", "Print QTY"))
+
+        self.label_10.setText(_translate("Dialog", "Start No."))
         self.timeEdit.setDateTime(QtCore.QDateTime.currentDateTime())
         self.timeEdit.setDisplayFormat(_translate("Dialog", "HH:mm"))
         self.pushButton.setText(_translate("Dialog", "Admin Login"))
         self.printButton.setText(_translate("Dialog", "Print"))
         self.pushButton_3.setText(_translate("Dialog", "X"))
         self.pushButton_4.setText(_translate("Dialog", "Export log"))
-        self.label_11.setText(_translate("Dialog", "Qrcode Generator"))
+        self.label_11.setText(_translate("Dialog", "MMTH QR Code Generator"))
         self.label_12.setText(_translate(
             "Dialog", datetime.today().strftime('%Y-%m-%d')))
         self.clicked = False
@@ -2977,7 +3103,7 @@ class MainWindow(QWidget):
 
     def change_state(self):
         textEdit_KanbanId_text = self.textEdit_KanbanId.text()
-        conn10 = sqlite3.connect('qr_code.db')
+        conn10 = sqlite3.connect(db_path)
 
         cursor = conn10.execute(
             "SELECT * from PART_KANBAN WHERE KANBAN_ID =? ", (textEdit_KanbanId_text,))
@@ -2994,17 +3120,23 @@ class MainWindow(QWidget):
         p.fillRect(self.rect(), QColor(128, 128, 128, 128))
 
     def mousePressEvent(self, event):
-        self.old_pos = event.screenPos()
+        # self.old_pos = event.screenPos()
+        self.dragPos = event.globalPos()
 
     def mouseMoveEvent(self, event):
-        if self.clicked:
-            dx = self.old_pos.x() - event.screenPos().x()
-            dy = self.old_pos.y() - event.screenPos().y()
-            self.move(self.pos().x() - dx, self.pos().y() - dy)
-        self.old_pos = event.screenPos()
-        self.clicked = True
+        # if self.clicked:
+        #     dx = self.old_pos.x() - event.screenPos().x()
+        #     dy = self.old_pos.y() - event.screenPos().y()
+        #     self.move(self.pos().x() - dx, self.pos().y() - dy)
+        # self.old_pos = event.screenPos()
+        # self.clicked = True
 
-        return QWidget.mouseMoveEvent(self, event)
+        if event.buttons() == QtCore.Qt.LeftButton:
+            self.move(self.pos() + event.globalPos() - self.dragPos)
+            self.dragPos = event.globalPos()
+            event.accept()
+
+        # return QWidget.mouseMoveEvent(self, event)
 
     def window2(self):                                             # <===
         self.w = Window2()
@@ -3028,49 +3160,46 @@ class MainWindow(QWidget):
         # print(f'Day Number of the week: {qDate.dayOfWeek()}')
 
     def export_csv(self):
-        # conn = sqlite3.connect('qr_code.db')
-        # conn.text_factory = str ## my current (failed) attempt to resolve this
-        # cur = conn.cursor()
-        # data = cur.execute("SELECT * FROM QRCODE")
 
-        # with open('qr_code_log.csv', 'wb') as f:
-        #     writer = csv.writer(f)
-        #     writer.writerow(['Employee_ID', 'Kanban_ID', 'Line','Part_ID','Part_NO','Time_select','Shift','Date_select','Date_time_stamp','Amount','Amount_start'])
-        #     writer.writerows(data)
+        try:
 
-        inpsql3 = sqlite3.connect('qr_code.db')
-        sql3_cursor = inpsql3.cursor()
-        sql3_cursor.execute('SELECT * FROM QRCODE')
+            inpsql3 = sqlite3.connect(db_path)
+            sql3_cursor = inpsql3.cursor()
+            sql3_cursor.execute('SELECT * FROM QRCODE')
 
-        file_name = "qr_code_log"
+            fileName = QFileDialog.getSaveFileName(self, "Save",
+                                                   "qr_code_log.csv",
+                                                   "Excel (*.csv)")
+            print(fileName)
+            fileName_use = fileName[0]
+            print('>>>>>>>', fileName_use)
+            if fileName_use:
+                # for fileName in fileName:
+                with open(fileName_use, 'w') as out_csv_file:
+                    csv_out = csv.writer(out_csv_file)
+                    # write header
+                    csv_out.writerow([d[0] for d in sql3_cursor.description])
+                    # write data
+                    for result in sql3_cursor:
+                        csv_out.writerow(result)
+                message = "Export file CSV on directory  \n" + \
+                    fileName_use + "\n" + "have successfully."
+                QMessageBox.information(
+                    self,
+                    "CSV exported successfully.",
+                    message,
+                    QMessageBox.Ok)
 
-        # foo_dir = QFileDialog.getSaveFileName(
-        #     # self, 'Select directory for save file csv', ".csv")
-        #     self, "Save csv file", "", "Csv Files (*.csv)", options=QFileDialog.setLabelText(file_name))
-        fileName = QFileDialog.getSaveFileName(self, "Save",
-                                                     "qr_code_log.csv",
-                                                     "Excel (*.csv)")
-        print(fileName)
-        fileName_use = fileName[0]
-        print('>>>>>>>', fileName_use)
-        if fileName_use:
-            # for fileName in fileName:
-            with open(fileName_use, 'w') as out_csv_file:
-                csv_out = csv.writer(out_csv_file)
-                # write header
-                csv_out.writerow([d[0] for d in sql3_cursor.description])
-                # write data
-                for result in sql3_cursor:
-                    csv_out.writerow(result)
-            message = "Export file CSV on directory  \n" + \
-                fileName_use + "\n" + "have successfully."
-            QMessageBox.information(
-                self,
-                "CSV exported successfully.",
-                message,
-                QMessageBox.Ok)
+            inpsql3.close()
 
-        inpsql3.close()
+        except OSError as err:
+            errr = "OS error: : "+str(err)
+            QMessageBox.about(self, "แจ้งเตือน",
+                              errr)
+
+        except:
+            QMessageBox.about(self, "แจ้งเตือน",
+                              "Unexpected error occured")
 
     def print_function(self):
         global textEdit_EmpNo_text
@@ -3105,148 +3234,138 @@ class MainWindow(QWidget):
             popup.show()
 
         else:
+            count_amount = len(str(textEdit_AmountStart_text))
 
-            conn_forcheck = sqlite3.connect('qr_code.db')
-            result_check_part_kanban = conn_forcheck.execute(
-                "SELECT * FROM PART_KANBAN where KANBAN_ID=? AND PART_NO=? AND PART_ID = ?", (textEdit_KanbanId_text, textEdit_PartNo_text, textEdit_PartId_text,))
-            result_check_part_id = conn_forcheck.execute(
-                "SELECT PART_ID FROM PART_KANBAN where PART_ID = ?", (textEdit_PartId_text,))
-            result_check_part_no = conn_forcheck.execute(
-                "SELECT PART_NO FROM PART_KANBAN where PART_NO = ?", (textEdit_PartNo_text,))
-            result_check_line = conn_forcheck.execute(
-                "SELECT LINE FROM LINE where LINE = ?", (textEdit_Line_text,))
-            result_check_kanban = conn_forcheck.execute(
-                "SELECT KANBAN_ID FROM PART_KANBAN where KANBAN_ID = ?", (textEdit_KanbanId_text,))
+            check_error_outofrange = int(
+                textEdit_AmountStart_text) + int(textEdit_Amount_text)
 
-            check_count_part_id = 0
-            check_count_part_no = 0
-            check_count_line = 0
-            check_count_kanban = 0
-            check_count_part_kanban = 0
-            for row1 in result_check_part_id:
-                check_count_part_id = check_count_part_id + 1
-            for row2 in result_check_part_no:
-                check_count_part_no = check_count_part_no + 1
-            for row3 in result_check_line:
-                check_count_line = check_count_line + 1
-            for row4 in result_check_part_kanban:
-                check_count_part_kanban = check_count_part_kanban + 1
-            for row5 in result_check_kanban:
-                check_count_kanban = check_count_kanban + 1
+            if(int(textEdit_AmountStart_text) > 0):
+                if(int(textEdit_Amount_text) > 0):
+                    if(count_amount == 4):
+                        if(check_error_outofrange <= 10000):
 
-            if check_count_part_kanban == 0:
+                            conn_forcheck = sqlite3.connect(db_path)
+                            result_check_part_kanban = conn_forcheck.execute(
+                                "SELECT * FROM PART_KANBAN where KANBAN_ID=? AND PART_NO=? AND PART_ID = ?", (textEdit_KanbanId_text, textEdit_PartNo_text, textEdit_PartId_text,))
+                            result_check_part_id = conn_forcheck.execute(
+                                "SELECT PART_ID FROM PART_KANBAN where PART_ID = ?", (textEdit_PartId_text,))
+                            result_check_part_no = conn_forcheck.execute(
+                                "SELECT PART_NO FROM PART_KANBAN where PART_NO = ?", (textEdit_PartNo_text,))
+                            result_check_line = conn_forcheck.execute(
+                                "SELECT LINE FROM LINE where LINE = ?", (textEdit_Line_text,))
+                            result_check_kanban = conn_forcheck.execute(
+                                "SELECT KANBAN_ID FROM PART_KANBAN where KANBAN_ID = ?", (textEdit_KanbanId_text,))
 
-                # if check_count_kanban == 0:
+                            check_count_part_id = 0
+                            check_count_part_no = 0
+                            check_count_line = 0
+                            check_count_kanban = 0
+                            check_count_part_kanban = 0
+                            for row1 in result_check_part_id:
+                                check_count_part_id = check_count_part_id + 1
+                            for row2 in result_check_part_no:
+                                check_count_part_no = check_count_part_no + 1
+                            for row3 in result_check_line:
+                                check_count_line = check_count_line + 1
+                            for row4 in result_check_part_kanban:
+                                check_count_part_kanban = check_count_part_kanban + 1
+                            for row5 in result_check_kanban:
+                                check_count_kanban = check_count_kanban + 1
 
-                #     if check_count_kanban == 0 and check_count_part_no == 0:
-                #         self.textEdit_KanbanId.setFocus()
-                #         self.textEdit_KanbanId.setStyleSheet(
-                #             "border: 1px solid red;")
-                #         self.textEdit_PartNo.setFocus()
-                #         self.textEdit_PartNo.setStyleSheet(
-                #             "border: 1px solid red;")
-                #     elif check_count_kanban == 0 and check_count_part_id == 0:
-                #         self.textEdit_KanbanId.setFocus()
-                #         self.textEdit_KanbanId.setStyleSheet(
-                #             "border: 1px solid red;")
-                #         self.textEdit_PartId.setFocus()
-                #         self.textEdit_PartId.setStyleSheet(
-                #             "border: 1px solid red;")
-                #     else:
-                #         self.textEdit_KanbanId.setFocus()
-                #         self.textEdit_KanbanId.setStyleSheet(
-                #             "border: 1px solid red;")
+                            if check_count_part_kanban == 0:
 
-                # elif check_count_part_no == 0:
-                #     if check_count_part_id == 0 and check_count_part_no == 0:
-                #         self.textEdit_PartId.setFocus()
-                #         self.textEdit_PartId.setStyleSheet(
-                #             "border: 1px solid red;")
-                #         self.textEdit_PartNo.setFocus()
-                #         self.textEdit_PartNo.setStyleSheet(
-                #             "border: 1px solid red;")
-                #     else:
-                #         self.textEdit_PartNo.setFocus()
-                #         self.textEdit_PartNo.setStyleSheet(
-                #             "border: 1px solid red;")
-                # elif check_count_part_id == 0:
-                #     self.textEdit_PartId.setFocus()
-                #     self.textEdit_PartId.setStyleSheet(
-                #         "border: 1px solid red;")
+                                self.textEdit_PartNo.setFocus()
+                                self.textEdit_PartNo.setStyleSheet(
+                                    "border: 1px solid red;")
+                                self.textEdit_PartId.setFocus()
+                                self.textEdit_PartId.setStyleSheet(
+                                    "border: 1px solid red;")
+                                self.textEdit_KanbanId.setFocus()
+                                self.textEdit_KanbanId.setStyleSheet(
+                                    "border: 1px solid red;")
+                                popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
+                                                              "แจ้งเตือน",
+                                                              "part id , part no , Kanban id ไม่ถูกต้อง / ไม่มีข้อมูลในระบบ กรุณาให้ admin เพิ่มข้อมูล",
+                                                              QtWidgets.QMessageBox.Ok,
+                                                              self)
+                                popup.show()
+                            else:
 
-                # else:
-                #     self.textEdit_PartNo.setFocus()
-                #     self.textEdit_PartNo.setStyleSheet(
-                #         "border: 1px solid red;")
-                #     self.textEdit_PartId.setFocus()
-                #     self.textEdit_PartId.setStyleSheet(
-                #         "border: 1px solid red;")
-                #     self.textEdit_KanbanId.setFocus()
-                #     self.textEdit_KanbanId.setStyleSheet(
-                #         "border: 1px solid red;")
-                self.textEdit_PartNo.setFocus()
-                self.textEdit_PartNo.setStyleSheet(
-                    "border: 1px solid red;")
-                self.textEdit_PartId.setFocus()
-                self.textEdit_PartId.setStyleSheet(
-                    "border: 1px solid red;")
-                self.textEdit_KanbanId.setFocus()
-                self.textEdit_KanbanId.setStyleSheet(
-                    "border: 1px solid red;")
-                popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
-                                              "แจ้งเตือน",
-                                              "part id , part no , Kanban id ไม่ถูกต้อง / ไม่มีข้อมูลในระบบ กรุณาให้ admin เพิ่มข้อมูล",
-                                              QtWidgets.QMessageBox.Ok,
-                                              self)
-                popup.show()
-            else:
+                                self.textEdit_PartNo.setStyleSheet(
+                                    "border: 0px solid red;")
 
-                self.textEdit_PartNo.setStyleSheet(
-                    "border: 0px solid red;")
+                                self.textEdit_PartId.setStyleSheet(
+                                    "border: 0px solid red;")
 
-                self.textEdit_PartId.setStyleSheet(
-                    "border: 0px solid red;")
+                                self.textEdit_KanbanId.setStyleSheet(
+                                    "border: 0px solid red;")
 
-                self.textEdit_KanbanId.setStyleSheet(
-                    "border: 0px solid red;")
+                                self.textEdit_AmountStart.setStyleSheet(
+                                    "border: 0px solid red;")
 
-                if check_count_line == 0:
-                    self.textEdit_Line.setFocus()
-                    self.textEdit_Line.setStyleSheet(
-                        "QLineEdit:focus { border: 1px solid red; }")
+                                if check_count_line == 0:
+                                    self.textEdit_Line.setFocus()
+                                    self.textEdit_Line.setStyleSheet(
+                                        "QLineEdit:focus { border: 1px solid red; }")
+                                    popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
+                                                                  "แจ้งเตือน",
+                                                                  "Line ไม่ถูกต้อง / ไม่มี Line นี้อยู่ กรุณาให้ admin เพิ่มข้อมูล",
+                                                                  QtWidgets.QMessageBox.Ok,
+                                                                  self)
+                                    popup.show()
+                                else:
+
+                                    self.w = popup_window()
+                                    self.w.show()
+                        else:
+                            popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
+                                                          "แจ้งเตือน",
+                                                          "error case : out of range >>> 9999 test bug ror kub",
+                                                          QtWidgets.QMessageBox.Ok,
+                                                          self)
+                            popup.show()
+                            self.textEdit_AmountStart.setFocus()
+                            self.textEdit_AmountStart.setStyleSheet(
+                                "border: 1px solid red;")
+                            self.textEdit_Amount.setStyleSheet(
+                                "border: 0px solid red;")
+
+                    else:
+                        popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
+                                                      "แจ้งเตือน",
+                                                      "กรุณากรอกข้อมูล Start No. เป็นเลขจำนวน 4 หลัก >>> 0000 Ex. เริ่มที่ 1 >>> 0001 , เริ่มที่ 10 >>> 0010  , กรอกข้อมูลไม่ถูกต้อง",
+                                                      QtWidgets.QMessageBox.Ok,
+                                                      self)
+                        popup.show()
+                        self.textEdit_AmountStart.setFocus()
+                        self.textEdit_AmountStart.setStyleSheet(
+                            "border: 1px solid red;")
+                        self.textEdit_Amount.setStyleSheet(
+                            "border: 0px solid red;")
+                else:
                     popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
                                                   "แจ้งเตือน",
-                                                  "Line ไม่ถูกต้อง / ไม่มี Line นี้อยู่ กรุณาให้ admin เพิ่มข้อมูล",
+                                                  "กรุณาใส่จำนวนที่ต้องการจะ Print QTY > 0",
                                                   QtWidgets.QMessageBox.Ok,
                                                   self)
                     popup.show()
-                else:
-                    # if check_count_line == 0:
-                    #     self.textEdit_Line.setFocus()
-                    #     self.textEdit_Line.setStyleSheet(
-                    #         "QLineEdit:focus { border: 1px solid red; }")
-                    #     popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
-                    #                                   "แจ้งเตือน",
-                    #                                   "line ไม่ถูกต้อง / ไม่มี line นี้อยู่ กรุณาให้ admin เพิ่มข้อมูล",
-                    #                                   QtWidgets.QMessageBox.Ok,
-                    #                                   self)
-                    #     popup.show()
-                    # else:
-                    #     if check_count_kanban == 0:
-                    #         self.textEdit_KanbanId.setFocus()
-                    #         self.textEdit_KanbanId.setStyleSheet(
-                    #             "QLineEdit:focus { border: 1px solid red; }")
-                    #         popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
-                    #                                       "แจ้งเตือน",
-                    #                                       "kanban id ไม่ถูกต้อง / ไม่มี kanban id นี้อยู่ กรุณาให้ admin เพิ่มข้อมูล",
-                    #                                       QtWidgets.QMessageBox.Ok,
-                    #                                       self)
-                    #         popup.show()
-                    #     else:
-                    #         self.w = popup_window()
-                    #         self.w.show()
-                    self.w = popup_window()
-                    self.w.show()
+                    self.textEdit_Amount.setFocus()
+                    self.textEdit_Amount.setStyleSheet(
+                        "border: 1px solid red;")
+                    self.textEdit_AmountStart.setStyleSheet(
+                        "border: 0px solid red;")
+            else:
+                popup = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
+                                              "แจ้งเตือน",
+                                              "กรุณาใส่จำนวนที่ต้องการนับ > 0",
+                                              QtWidgets.QMessageBox.Ok,
+                                              self)
+                popup.show()
+                self.textEdit_AmountStart.setFocus()
+                self.textEdit_AmountStart.setStyleSheet(
+                    "border: 1px solid red;")
+                self.textEdit_Amount.setStyleSheet(
+                    "border: 0px solid red;")
 
     def exit_app(self):
         self.close()
