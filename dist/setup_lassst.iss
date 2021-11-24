@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MMTH_QRcode_Generator"
-#define MyAppVersion "1.5"
+#define MyAppVersion "1.9"
 #define MyAppPublisher "TSA"
 #define MyAppURL "https://www.thaisummit.co.th/th/"
 #define MyAppExeName "qr_code.exe"
